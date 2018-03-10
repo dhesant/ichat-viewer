@@ -79,7 +79,7 @@ function group_message(msgs) {
 	   ) {
 	    output.push([msg]);
 	}
-	else {
+	else if (msg['OriginalMessage'] !== undefined) {
 	    _.last(output).push(msg);
 	}
     });
@@ -91,7 +91,7 @@ function is_sysmsg(msg) {
     if (msg['Sender'] === null) {
 	return true;
     }
-    if (msg['OriginalMessage'].startsWith('/me')) {
+    if (msg['OriginalMessage'] !== undefined && msg['OriginalMessage'].startsWith('/me')) {
 	return true;
     }
     return false;
