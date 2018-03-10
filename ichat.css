@@ -1,0 +1,146 @@
+/* System message formatting */
+.system-message {
+    display: block;
+    clear: both;
+    text-align: center;
+
+    margin-top: 15px;
+    margin-bottom: 15px;
+    
+    font-family: Helvetica Neue, Segoe UI, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    color: rgba(0, 0, 0, .40);
+}
+
+/* Username formatting */
+.username {
+    display: block;
+    clear: both;
+    text-align: left;
+
+    padding-left: 12px;
+    margin-bottom: 1px;
+    
+    font-family: Helvetica Neue, Segoe UI, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, .40);
+}
+
+/* Generic Message Formatting */
+.message {
+    border-radius: 1.3em;
+
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+
+    display: block;
+    clear: both;
+
+    font-family: Helvetica Neue, Segoe UI, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1;
+    max-width: 85%;
+    width: fit-content;
+}
+
+/* Bubble Grouping Formatting */
+.message:first-of-type {
+    border-top-left-radius: 1.3em !important;
+    border-top-right-radius: 1.3em !important;
+}
+
+.message:last-of-type {
+    border-bottom-left-radius: 1.3em !important;
+    border-bottom-right-radius: 1.3em !important;
+}
+
+@media all and (min-width: 920px) {
+    .message {
+	box-sizing:content-box;
+	max-width:70%;
+    }
+}
+@media all and (min-width: 1211px) {
+    .message {
+	max-width:55%;
+    }
+}
+@media all and (min-width: 1600px) {
+    .message {
+	max-width:60%;
+    }
+}
+
+/* Bubble User Formatting */
+.host-message {
+    align-self: flex-end;
+    background: #f1f0f0;
+    color: #000000;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.guest-message {
+    align-self: flex-start;
+    /* background-color: #0084ff; */
+    color: #ffffff;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+/* Message block formatting */;
+.message-block {
+    width: 100%;
+}
+
+/* Colors */
+.color-0 {
+    background-color: rgb(0, 132, 255);
+}
+.color-1 {
+    background-color: rgb(68, 190, 199);
+}
+.color-2 {
+    background-color: rgb(255, 195, 0);
+}
+.color-3 {
+    background-color: rgb(250, 60, 76);
+}
+.color-4 {
+    background-color: rgb(214, 150, 187);
+}
+.color-5 {
+    background-color: rgb(102, 153, 204);
+}
+.color-6 {
+    background-color: rgb(19, 207, 19);
+}
+.color-7 {
+    background-color: rgb(255, 126, 41);
+}
+.color-8 {
+    background-color: rgb(230, 133, 133);
+}
+.color-9 {
+    background-color: rgb(118, 70, 255);
+}
+.color-10 {
+    background-color: rgb(32, 206, 245);
+}
+.color-11 {
+    background-color: rgb(103, 184, 104);
+}
+.color-12 {
+    background-color: rgb(212, 168, 140);
+}
+.color-13 {
+    background-color: rgb(255, 92, 161);
+}
+.color-14 {
+    background-color: rgb(166, 149, 199);
+}
